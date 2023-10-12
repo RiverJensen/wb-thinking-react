@@ -22,6 +22,7 @@ const rows = currentData.map((invoiceItem)=>{
         return (
             <TabelRow
                 key = {id}
+                id = {id}
                 initialInvoiceData={{description, rate, hours}}
                 initialIsEditing={isEditing}
                 deleteFunc={() => deleteRow(id)}

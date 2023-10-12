@@ -37,7 +37,7 @@ const handlerFunctions = {
         const {id}=req.params
         const {description, rate, hours}= req.body
 
-        const index = TEST_DATA.findIndex(invoice.id == id)
+        const index = TEST_DATA.findIndex(invoice => invoice.id == id)
         const invoiceItem= TEST_DATA[index]
 
         invoiceItem.description = description
